@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SnapChat Lock</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_extra">ExtraActivity</string>
+    <string name="title_activity_hud">HudActivity</string>
+    <string name="title_activity_passcode__theme">Passcode_ThemeActivity</string>
+    <string name="title_activity_image_grid">ImageGridActivity</string>
+
+    <string-array name="image">
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>png</item>
+    </string-array>
+
+    <string name="title_activity_set_images">SetImagesActivity</string>
+    <string name="title_activity_add_app_dialog">AddAppDialogActivity</string>
+    <string name="title_activity_lock_themes">LockThemesActivity</string>
+    <string name="title_activity_starter">StarterActivity</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

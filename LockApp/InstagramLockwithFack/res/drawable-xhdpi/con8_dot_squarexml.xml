@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/con8_star" android:state_checked="true"></item>
+    <item android:drawable="@android:color/transparent" android:state_checked="false"></item>
+
+</selector>

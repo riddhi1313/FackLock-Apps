@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/alp_42447968_textview_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/alp_42447968_viewgroup_footer"
+        android:layout_below="@id/rl_text" >
+
+        <include
+            android:id="@+id/alp_42447968_view_lock_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/alp_42447968_lock_pattern_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alp_42447968_viewgroup_footer"
+        style="?attr/alp_42447968_button_bar_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- A separator view -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alp_42447968_separator_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/alp_42447968_button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cancelxml"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/alp_42447968_button_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:background="@drawable/confirmxml"
+                android:enabled="false"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/stub1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/viewstub1"
+        android:layout="@layout/dialog_w" />
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ccc.hikelock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="ccc.hikelock.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="ccc.hikelock.Hide_icon_popup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.GalleryListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.ExtraActivity"
+            android:label="@string/title_activity_extra"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.LockActivity"
+            android:label="@string/title_activity_extra"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.ImageGridActivity"
+            android:label="@string/title_activity_image_grid"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.SetPasscodeImagesActivity"
+            android:label="@string/title_activity_set_images"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="eu.janmuller.android.simplecropimage.CropImage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.QuestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.ByQuestionAnswerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.second_fackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.ResetQuestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="test.aplock.FackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="test.aplock.AppLockActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.StartActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="ccc.hikelock.CheckService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="test.aplock.MyAppLockService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="test.aplock.MyAppLockHideService"
+            android:enabled="true" >
+        </service>
+
+        <receiver
+            android:name="ccc.hikelock.BootReciever"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ccc.hikelock.Hide_icon_reciver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="ccc.hikelock.LockThemesActivity"
+            android:label="@string/title_activity_lock_themes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ccc.hikelock.LockActivity_square"
+            android:label="@string/title_activity_lock_themes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="test.aplock.UnlockActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.haibison.android.lockpattern.LockPatternActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Alp.42447968.Theme.Dark" />
+        <activity
+            android:name="ccc.hikelock.StarterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ccc.hikelock.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

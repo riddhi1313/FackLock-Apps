@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="margin_t">17dp</dimen>
+    <dimen name="base_height">345dp</dimen>
+    <dimen name="bottom_margin">70dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="left_margin">70dp</dimen>
+    <dimen name="right_margin">10dp</dimen>
+    <dimen name="top_margin">8dp</dimen>
+    <dimen name="date_top_margin">13dp</dimen>
+    <dimen name="searchtext_width">180dp</dimen>
+    <dimen name="searchtext_height">35dp</dimen>
+    <dimen name="btnsearch_left">130dp</dimen>
+
+</resources>

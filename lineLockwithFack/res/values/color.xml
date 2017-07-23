@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#BBCAE4</color>
+    <color name="navy_blue">#127EFC</color>
+    <color name="red">#FC4A46</color>
+    <color name="gray">#787878 </color>
+    <color name="list_bg_dark">#2CC7B7</color>
+    <color name="list_bg_light">#4BCFC2</color>
+    <color name="bt_text">#636363</color>
+     <color name="trans">#00000000 </color>
+
+    <drawable name="waveform_selected">#FC4A46</drawable>
+    <drawable name="waveform_unselected">#ffffff</drawable>
+    <drawable name="waveform_unselected_bkgnd_overlay">#66FF0000</drawable>
+    <drawable name="selection_border">#ffffff</drawable>
+    <drawable name="playback_indicator">#ffff66</drawable>
+    <drawable name="grid_line">#FC4A46</drawable>
+    <drawable name="timecode">#ddffffdd</drawable>
+    <drawable name="timecode_shadow">#aa000000</drawable>
+    <drawable name="type_bkgnd_alarm">#88880000</drawable>
+    <drawable name="type_bkgnd_ringtone">#88008888</drawable>
+    <drawable name="type_bkgnd_notification">#88666600</drawable>
+    <drawable name="type_bkgnd_music">#88000000</drawable>
+    <drawable name="type_bkgnd_unsupported">#88cccccc</drawable>
+
+    <!-- progress -->
+    <color name="default_screen_bg">#20324a</color>
+    <color name="rounded_container_bg">#80000000</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
+    <color name="green">#00ff00</color>
+    <color name="blue_light">#e1938c</color>
+        <color name="blue2">#0000ff</color>
+<!-- progress -->
+    
+</resources>
